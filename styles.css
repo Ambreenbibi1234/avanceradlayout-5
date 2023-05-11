@@ -1,0 +1,119 @@
+/*https://coolors.co/a36788-b37196-713973-2f004f*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+body {
+    background-color: #568E70;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    background-color: yellowgreen;
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 1200px;
+
+}
+
+header {
+    background-color: #497E71;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    /*if height use this*/
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #772a2a;
+    background-color: #1B1B3A;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+
+}
+
+header nav a:hover {
+    color: black;
+    background-color: #6F776B;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #639E6f;
+    margin: 10px auto;
+    width: 80%;
+
+}
+
+footer {
+    background-color: #497E71;
+    color: #26413a;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+
+@media(min-width:600px) {
+    body {
+        background-color: #639E6f
+    }
+
+    header nav {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    main {
+        display: flex;
+        gap: 70px;
+        margin: 0 30px;
+    }
+}
+
+/*form*/
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+
+}
+
+.send-button-container {
+    margin: 0 auto;
+}
+
+.send-button-container {
+    width: 30%;
+    min-width: 100px;
+}
+
+label {
+    display: block;
+    padding-bottom: 7px;
+}
+
+@media(min-width:600px) {
+    form {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .send-button-container {
+        grid-column: span 2;
+    }
+}
